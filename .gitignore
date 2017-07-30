@@ -7,3 +7,5 @@ Thumbs.db
 
 ### NPM
 node_modules/
+dist/
+mix-manifest.json
