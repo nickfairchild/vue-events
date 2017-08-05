@@ -1,12 +1,10 @@
 function plugin(Vue) {
-    if (plugin.installed) {
-        return;
-    }
+    if (plugin.installed) return
 
     const events = new Vue({
         methods: {
-            fire(name, data = null) {
-                this.$emit(name, data)
+            fire(name, ...args) {
+                this.$emit(name, ...args)
             },
 
             listen(name, cb) {
